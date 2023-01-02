@@ -6,9 +6,9 @@ function EventCity({ data }) {
   return (
     <>
       <h3>All the events</h3>
-      {data.map((city) => {
+      {data.map((city, index) => {
         return (
-          <Link href={`/events/${city.id}`} legacyBehavior>
+          <Link key={index} href={`/events/${city.id}`} legacyBehavior>
             <a>
               <Image
                 src={city.image}
@@ -29,7 +29,6 @@ export default EventCity;
 
 export async function getStaticProps() {
   const data = await import("../../data/data.json");
-  console.log(data.events_categories);
   return {
     props: {
       data: data.events_categories,

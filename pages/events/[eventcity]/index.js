@@ -7,9 +7,13 @@ function EventCity({ events, cityName }) {
     <div>
       <h2>Events in {cityName.charAt(0).toUpperCase() + cityName.slice(1)}</h2>
       <hr />
-      {events.map((event) => {
+      {events.map((event, index) => {
         return (
-          <Link href={`/events/${event.city}/${event.id}`} legacyBehavior>
+          <Link
+            key={index}
+            href={`/events/${event.city}/${event.id}`}
+            legacyBehavior
+          >
             <a>
               <h1>{event.title}</h1>
               <Image
@@ -48,7 +52,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  //   console.log("context - ", context);
   const data = await import("../../../data/data.json");
 
   const events = data.allEvents.filter(

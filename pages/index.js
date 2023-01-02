@@ -31,13 +31,15 @@ export default function Home({ title, city }) {
         </nav>
       </header>
       <main className={styles.main}>
-        {city.map((category) => {
+        {city.map((category, index) => {
           return (
-            <a href={`/events/${category.id}`}>
-              <Image src={category.image} width={400} height={300} />
-              <h2>{category.title}</h2>
-              <p>{category.description}</p>
-            </a>
+            <Link key={index} href={`/events/${category.id}`} legacyBehavior>
+              <a>
+                <Image src={category.image} width={400} height={300} />
+                <h2>{category.title}</h2>
+                <p>{category.description}</p>
+              </a>
+            </Link>
           );
         })}
       </main>
