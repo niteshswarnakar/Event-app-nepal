@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 function EventCity({ data }) {
   return (
@@ -7,10 +8,17 @@ function EventCity({ data }) {
       <h3>All the events</h3>
       {data.map((city) => {
         return (
-          <a href={`/events/${city.id}`}>
-            <Image src={city.image} width={400} height={300} alt={city.title} />
-            <p>{city.title}</p>
-          </a>
+          <Link href={`/events/${city.id}`} legacyBehavior>
+            <a>
+              <Image
+                src={city.image}
+                width={400}
+                height={300}
+                alt={city.title}
+              />
+              <p>{city.title}</p>
+            </a>
+          </Link>
         );
       })}
     </>
