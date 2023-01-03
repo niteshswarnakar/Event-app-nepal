@@ -4,8 +4,6 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home({ title, city }) {
   return (
     <>
@@ -15,9 +13,8 @@ export default function Home({ title, city }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header>
-        <h2>{title}</h2>
-        <nav>
+      <header className={styles.header_nav}>
+        <nav className={styles.nav_links}>
           {/* <img src = {}/> */}
           <Link href="/" legacyBehavior>
             <a>Home</a>

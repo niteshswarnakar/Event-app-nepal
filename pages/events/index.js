@@ -5,22 +5,25 @@ import Link from "next/link";
 function EventCity({ data }) {
   return (
     <>
-      <h3>All the events</h3>
-      {data.map((city, index) => {
-        return (
-          <Link key={index} href={`/events/${city.id}`} legacyBehavior>
-            <a>
-              <Image
-                src={city.image}
-                width={400}
-                height={300}
-                alt={city.title}
-              />
-              <p>{city.title}</p>
-            </a>
-          </Link>
-        );
-      })}
+      <div className="events-container">
+        {data.map((city, index) => {
+          return (
+            <div className="events_card">
+              <Link key={index} href={`/events/${city.id}`} legacyBehavior>
+                <a>
+                  <Image
+                    src={city.image}
+                    width={700}
+                    height={500}
+                    alt={city.title}
+                  />
+                  <p className="event-city">{city.title}</p>
+                </a>
+              </Link>
+            </div>
+          );
+        })}
+      </div>
     </>
   );
 }

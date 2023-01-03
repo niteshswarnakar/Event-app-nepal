@@ -4,6 +4,22 @@
   min-height: 100vh;
 }
 
+.header_nav {
+  height: 8vh;
+  background-color: rgb(1, 1, 26);
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav_links {
+  font-size: 1.8rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 3.6rem;
+}
+
 .container {
   margin: auto 1200px;
   display: flex;
