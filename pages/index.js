@@ -31,17 +31,25 @@ export default function Home({ title, city }) {
         </nav>
       </header>
       <main className={styles.main}>
-        {city.map((category, index) => {
-          return (
-            <Link key={index} href={`/events/${category.id}`} legacyBehavior>
-              <a>
-                <Image src={category.image} width={400} height={300} />
-                <h2>{category.title}</h2>
-                <p>{category.description}</p>
-              </a>
-            </Link>
-          );
-        })}
+        <div className={styles.container}>
+          {city.map((category, index) => {
+            return (
+              <div className={styles.home_card}>
+                <Link
+                  key={index}
+                  href={`/events/${category.id}`}
+                  legacyBehavior
+                >
+                  <a>
+                    <Image src={category.image} width={800} height={500} />
+                    <h2>{category.title}</h2>
+                    <p>{category.description}</p>
+                  </a>
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </main>
       <footer>
         <p> copyright - events app</p>
