@@ -3,6 +3,9 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Homepage from "../src/components/home/Homepage";
+import Footer from "../src/components/footer/Footer";
+import Header from "../src/components/header/Header";
 
 export default function Home({ title, city }) {
   return (
@@ -13,44 +16,7 @@ export default function Home({ title, city }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className={styles.header_nav}>
-        <nav className={styles.nav_links}>
-          {/* <img src = {}/> */}
-          <Link href="/" legacyBehavior>
-            <a>Home</a>
-          </Link>
-          <Link href="/about_us" legacyBehavior>
-            <a>About</a>
-          </Link>
-          <Link href="/events" legacyBehavior>
-            <a>Events</a>
-          </Link>
-        </nav>
-      </header>
-      <main className={styles.main}>
-        <div className={styles.container}>
-          {city.map((category, index) => {
-            return (
-              <div className={styles.home_card}>
-                <Link
-                  key={index}
-                  href={`/events/${category.id}`}
-                  legacyBehavior
-                >
-                  <a>
-                    <Image src={category.image} width={800} height={500} />
-                    <h2>{category.title}</h2>
-                    <p>{category.description}</p>
-                  </a>
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-      </main>
-      <footer>
-        <p> copyright - events app</p>
-      </footer>
+      <Homepage city={city} />
     </>
   );
 }
