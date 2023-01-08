@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function Header() {
   return (
-    <div>
-      <header>
+    <header>
+      <div className="topNav">
+        <Image
+          src={"/assets/secondlogo.png"}
+          width={50}
+          height={50}
+          alt="my logo"
+        />
         <nav>
           {/* <img src = {}/> */}
           <Link href="/" legacyBehavior>
@@ -17,8 +24,8 @@ function Header() {
             <a>Events</a>
           </Link>
         </nav>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 }
 

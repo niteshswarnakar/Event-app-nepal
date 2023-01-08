@@ -1,11 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Homepage from "../src/components/home/Homepage";
-import Footer from "../src/components/footer/Footer";
-import Header from "../src/components/header/Header";
 
 export default function Home({ title, city }) {
   return (
