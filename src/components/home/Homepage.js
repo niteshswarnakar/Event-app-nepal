@@ -4,22 +4,28 @@ import Image from "next/image";
 
 function Homepage({ city }) {
   return (
-    <div>
-      <main>
-        <div>
+    <div className="main-section">
+      <main className="container">
+        <div className="card-container">
           {city.map((category, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="card">
                 <Link href={`/events/${category.id}`} legacyBehavior>
-                  <a>
+                  <a
+                    className={`card-body ${
+                      index % 2 != 0 ? "row-reverse" : ""
+                    }`}
+                  >
                     <Image
                       src={category.image}
-                      width={800}
+                      width={500}
                       height={500}
                       alt="nitesh"
                     />
-                    <h2>{category.title}</h2>
-                    <p>{category.description}</p>
+                    <div className="card-info">
+                      <h2>{category.title}</h2>
+                      <p>{category.description}</p>
+                    </div>
                   </a>
                 </Link>
               </div>

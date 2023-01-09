@@ -4,27 +4,33 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header>
-      <div className="topNav">
+    <header class="header_section">
+      <nav className="topNav">
         <Image
-          src={"/assets/secondlogo.png"}
+          src={"/assets/firstlogo.png"}
           width={50}
           height={50}
           alt="my logo"
         />
-        <nav>
-          {/* <img src = {}/> */}
-          <Link href="/" legacyBehavior>
-            <a>Home</a>
-          </Link>
-          <Link href="/about_us" legacyBehavior>
-            <a>About</a>
-          </Link>
-          <Link href="/events" legacyBehavior>
-            <a>Events</a>
-          </Link>
-        </nav>
-      </div>
+        <ul className="nav-links">
+          <li>
+            {/* <img src = {}/> */}
+            <Link href="/" legacyBehavior>
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about_us" legacyBehavior>
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/events" legacyBehavior>
+              <a>Events</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
