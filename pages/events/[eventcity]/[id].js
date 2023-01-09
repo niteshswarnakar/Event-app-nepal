@@ -3,7 +3,7 @@ import React from "react";
 
 function EventPage({ event }) {
   return (
-    <div>
+    <div className="container event-page">
       <Image src={event.image} height={500} width={1000} alt={event.title} />
       <h1>{event.title}</h1>
       <p>{event.description}</p>

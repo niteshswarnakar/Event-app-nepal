@@ -1,35 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import CategoryEvent from "../../../src/components/events/CategoryEvent";
 
 function EventCity({ events, cityName }) {
-  return (
-    <div>
-      <h2>Events in {cityName.charAt(0).toUpperCase() + cityName.slice(1)}</h2>
-      <hr />
-      {events.map((event, index) => {
-        return (
-          <Link
-            key={index}
-            href={`/events/${event.city}/${event.id}`}
-            legacyBehavior
-          >
-            <a>
-              <h1>{event.title}</h1>
-              <Image
-                src={event.image}
-                height={300}
-                width={400}
-                alt={event.title}
-              />
-              <p>{event.description}</p>
-              <h3>{event.city}</h3>
-            </a>
-          </Link>
-        );
-      })}
-    </div>
-  );
+  return <CategoryEvent events={events} cityName={cityName} />;
 }
 
 export default EventCity;

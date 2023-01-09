@@ -37,8 +37,9 @@ li {
 }
 
 .topNav {
-  color: black;
   height: 20vh;
+  color: black;
+  background-color: ;
   width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -86,4 +87,98 @@ li {
 
 .row-reverse {
   flex-direction: row-reverse;
+}
+
+/* ABOUT US PAGE */
+
+.about-us {
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.about-us h2 {
+  font-size: 3rem;
+}
+
+.about-us p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* EVENTS PAGE DESIGN STYLES */
+
+.events-container {
+  align-items: center;
+  height: 60vh;
+  justify-content: center;
+  gap: 3rem;
+  display: flex;
+}
+
+.events_card {
+  width: 500px;
+  overflow: hidden;
+}
+
+.events_card_link p {
+  margin-top: -12rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 20px black;
+  color: white;
+  font-size: 3rem;
+}
+
+/* CATEGORY EVENT PAGE  */
+.category-event-container {
+  padding-top: 4rem;
+}
+
+.category-event-container .container h2 {
+  font-size: 3rem;
+}
+
+.category-events-div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.container-bigger {
+  margin: auto;
+  width: 1500px;
+}
+
+.container-bigger h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.category-event {
+  width: 27%;
+}
+
+.category-event h1 {
+  padding: 0.5rem 1.4rem;
+}
+
+.category-event p {
+  padding: 00 1.4rem;
+}
+
+/* INDIVIDUAL EVENT PAGE  */
+
+.event-page {
+  padding-top: 4rem;
+}
+
+.event-page h1,
+.event-page p {
+  padding: 0 2rem;
 }

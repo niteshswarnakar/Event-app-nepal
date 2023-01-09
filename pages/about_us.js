@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutPage() {
   return (
-    <div>
+    <div className="about-us">
       <h2>About Us</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
