@@ -4,7 +4,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header class="header_section">
+    <header className="header_section">
       <nav className="topNav">
         <Image
           src={"/assets/firstlogo.png"}
