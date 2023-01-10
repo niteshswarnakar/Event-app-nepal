@@ -18,7 +18,7 @@ function Homepage({ city }) {
                   >
                     <Image
                       src={category.image}
-                      width={500}
+                      width={700}
                       height={500}
                       alt="nitesh"
                     />

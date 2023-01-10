@@ -4,19 +4,19 @@
       "id": "kathmandu",
       "title": "Events in kathmandu",
       "description": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem",
-      "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      "image": "https://images.unsplash.com/photo-1592285896110-8d88b5b3a5d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
     },
     {
       "id": "nepalgunj",
       "title": "Events in nepalgunj",
       "description": "corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate.",
-      "image": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+      "image": "https://images.unsplash.com/photo-1592639296346-560c37a0f711?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
     },
     {
       "id": "pokhara",
       "title": "Events in pokhara",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
-      "image": "https://images.unsplash.com/photo-1579282240050-352db0a14c21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=652&q=80"
+      "image": "https://images.unsplash.com/photo-1562462181-b228e3cff9ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1610&q=80"
     }
   ],
   "allEvents": [
@@ -42,7 +42,11 @@
       "city": "kathmandu",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
       "image": "https://images.unsplash.com/photo-1521478413868-1bbd982fa4a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "emails_registered": []
+      "emails_registered": [
+        "admin@example.com",
+        "niteshnep@yahoo.com",
+        "hello@yahoo.com"
+      ]
     },
     {
       "id": "'edtech-world-summit-2022",
@@ -113,7 +117,17 @@
       "city": "pokhara",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
       "image": "https://images.unsplash.com/photo-1478147427282-58a87a120781?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "emails_registered": ["alicia@gmail.com", "monica@gmail.com"]
+      "emails_registered": [
+        "alicia@gmail.com",
+        "monica@gmail.com",
+        "nitesh.swarnakar1@gmail.com",
+        "iamnitesh",
+        "iamnitesh@nitesh.com",
+        "niteshbest@gmail.com",
+        "niteshbest@gmail.co",
+        "niteshbest@gmail.in",
+        "niteshbest@gmail.i"
+      ]
     },
     {
       "id": "the-halloween-house-party",
@@ -134,7 +148,11 @@
       "city": "pokhara",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
       "image": "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "emails_registered": ["alicia@gmail.com", "monica@gmail.com"]
+      "emails_registered": [
+        "alicia@gmail.com",
+        "monica@gmail.com",
+        "anmathssanss@gmail.com"
+      ]
     },
     {
       "id": "world-congress-2022---pokhara",
@@ -142,7 +160,13 @@
       "city": "pokhara",
       "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscisfa.",
       "image": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-      "emails_registered": ["alicia@gmail.com", "monica@gmail.com"]
+      "emails_registered": [
+        "alicia@gmail.com",
+        "monica@gmail.com",
+        "nitesh.swarnakar1@outlook.com",
+        "nitesh.searnakar2@g.com",
+        "admin@example.com"
+      ]
     },
     {
       "id": "riskminds-international",

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div>
+    <div className="footer-container">
       <footer>
         <p> copyright - events app</p>
       </footer>

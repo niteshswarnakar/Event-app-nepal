@@ -37,7 +37,7 @@ li {
 }
 
 .topNav {
-  height: 20vh;
+  height: 15vh;
   color: black;
   background-color: ;
   width: 1400px;
@@ -175,10 +175,51 @@ li {
 /* INDIVIDUAL EVENT PAGE  */
 
 .event-page {
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .event-page h1,
 .event-page p {
   padding: 0 2rem;
+}
+
+.email-form {
+  /* background-color: red; */
+  margin-top: 1rem;
+  width: 50%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.email-form label {
+  margin-left: 2rem;
+}
+
+.email-form input {
+  height: 2rem;
+  background-color: white;
+  border: 1px solid lightblue;
+  margin-left: 1rem;
+  color: black;
+  padding-left: 0.7rem;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.email-form button {
+  padding: 0.5rem 1.6rem;
+  margin-left: 0.4rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: lightblue;
+}
+
+.email-form button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.4s;
 }
