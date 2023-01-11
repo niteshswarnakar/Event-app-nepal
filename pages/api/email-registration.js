@@ -1,14 +1,16 @@
 import fs from "fs";
 import path from "path";
 
+//FILE PATH
 const filePath = path.join(process.cwd(), "data", "data.json");
 
+//EXTRACT DATA TO UPDATED EMAILS_REGISTERED
 function extractData(filePath) {
   const jsonData = fs.readFileSync(filePath);
   return JSON.parse(jsonData);
 }
 
-export default function registerEmail(req, res) {
+export default async function registerEmail(req, res) {
   const { method } = req;
   const { events_categories, allEvents } = extractData(filePath);
 

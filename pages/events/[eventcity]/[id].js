@@ -23,16 +23,19 @@ function EventPage({ event }) {
     }
 
     try {
-      const response = await fetch("/api/email-registration", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          email,
-          id: eventId,
-        }),
-      });
+      const response = await fetch(
+        "https://event-app-nepal.vercel.app/api/email-registration",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            id: eventId,
+          }),
+        }
+      );
 
       if (!response.ok) throw new Error(`Error aayo yr : ${response.status}`);
 
