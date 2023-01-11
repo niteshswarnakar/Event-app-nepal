@@ -3,8 +3,8 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer-container">
-      <footer>
-        <p> copyright - events app</p>
+      <footer className="footer">
+        <p> @ copyright - EVENTS APP</p>
       </footer>
     </div>
   );
